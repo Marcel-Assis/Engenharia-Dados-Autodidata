@@ -56,3 +56,17 @@ meu_dicionario_aninhado = {
 # Acessando valores em dicionários aninhados:
 nome_pessoa1 = meu_dicionario_aninhado["pessoa1"]["nome"]  # Alice
 idade_pessoa2 = meu_dicionario_aninhado["pessoa2"]["idade"]  # 30
+
+# Adicionando valores em dicionários aninhados:
+meu_dicionario_aninhado["pessoa1"]["profissao"] = "Engenheira"  # Adiciona uma nova chave ao dicionário aninhado
+
+# Removendo valores em dicionários aninhados:
+del meu_dicionario_aninhado["pessoa1"]["profissao"]  # Remove a chave "profissao" do dicionário aninhado
+
+# Percorrendo dicionários aninhados:
+print("------")
+for pessoa, info in meu_dicionario_aninhado.items():
+    print(f"{pessoa}:")
+    for chave, valor in info.items():
+        print(f"  {chave}: {valor}")
+
