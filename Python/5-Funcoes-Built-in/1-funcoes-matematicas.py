@@ -1,6 +1,4 @@
 # Funções matemáticas built-in:
-
-
 # Exemplo de uso:
 import math
 
