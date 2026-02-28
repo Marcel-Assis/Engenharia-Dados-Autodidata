@@ -26,15 +26,15 @@ print(menorNumero(5, 2, 3))
 
 '''4 - Crie uma função que calcule a formula de Bhaskara, encontrando o X. Os
 coeficientes a,b e c devem ser lidos por input.'''
-# def bhaskara():
-#     a = float(input("Informe a: "))
-#     b = float(input("Informe b: "))
-#     c = float(input("Informe c: "))
-#     delta = (b ** 2) - (4 * a) * c
-#     x1 = (-b + math.sqrt(delta)) / (2 * a)
-#     x2 = (-b - math.sqrt(delta)) / (2 * a)
-#     return x1, x2
-# print(bhaskara())
+def bhaskara():
+    a = float(input("Informe a: "))
+    b = float(input("Informe b: "))
+    c = float(input("Informe c: "))
+    delta = (b ** 2) - (4 * a) * c
+    x1 = (-b + math.sqrt(delta)) / (2 * a)
+    x2 = (-b - math.sqrt(delta)) / (2 * a)
+    return x1, x2
+print(bhaskara())
 
 '''5 - Crie uma função que receba uma string, e para cada letra minúscula a
 transforme em uma letra maiúscula e vice versa.'''
