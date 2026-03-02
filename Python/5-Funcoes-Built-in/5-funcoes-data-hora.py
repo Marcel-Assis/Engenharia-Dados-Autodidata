@@ -51,7 +51,7 @@ print(horario_futuro)  # 2026-02-24 06:26:35.789012
 
 # Operações com timedelta:
 delta = timedelta(days=2, hours=3, minutes=30)
-print(delta)  # 2 days, 3:30:00
+print(delta)  # 2 dias, 3:30:00
 
 # %A dia da semana
 # %a dia da semana abreviado

@@ -41,8 +41,14 @@ lista_texto = ['1', 'João', '32', 'Maria', '5', '70']
 def converteTextoInt(list):
     lista_inteiros = []
     for text in list:
-        if text.isdecimal():
+        if text.isdigit():
             lista_inteiros.append((int(text)))
     lista_inteiros.sort()
     return lista_inteiros
 print(converteTextoInt(lista_texto))
+
+'''11 - Leia por input sua data de nascimento no formado Dia/Mês/Ano e mostre quantos dias
+você já viveu.'''
+from datetime import datetime
+nascimento = input("Digite a sua data de nascimento (dd/mm/aaaa): ")
+
