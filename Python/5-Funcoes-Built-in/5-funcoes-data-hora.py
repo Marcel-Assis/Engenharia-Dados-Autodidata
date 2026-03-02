@@ -2,7 +2,7 @@
 
 
 # Obter a data e hora atual:
-from datetime import datetime, timedelta, timedelta
+from datetime import datetime, timedelta
 
 
 agora = datetime.now()

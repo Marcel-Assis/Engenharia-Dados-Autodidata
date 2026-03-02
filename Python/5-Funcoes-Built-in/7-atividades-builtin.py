@@ -50,5 +50,13 @@ print(converteTextoInt(lista_texto))
 '''11 - Leia por input sua data de nascimento no formado Dia/Mês/Ano e mostre quantos dias
 você já viveu.'''
 from datetime import datetime
-nascimento = input("Digite a sua data de nascimento (dd/mm/aaaa): ")
+nascimento = '01/09/1993' #Sem input pra otimizar a execução e teste
+hoje = datetime.now()
+diasVividos = hoje - datetime.strptime(nascimento, "%d/%m/%Y")
+print(diasVividos.days)
 
+'''12 - Leia por input sua próxima data de aniversario no formado Dia/Mês/Ano e mostre quantos
+dias faltam para seu próximo aniversario.'''
+proximo_aniversario = datetime.strptime('01/09/2026', "%d/%m/%Y")
+calculo = proximo_aniversario - hoje
+print(calculo.days)
