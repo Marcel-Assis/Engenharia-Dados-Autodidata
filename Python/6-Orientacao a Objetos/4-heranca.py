@@ -6,12 +6,12 @@ class Veiculo: # Classe base (superclasse)
 
 class Carro(Veiculo): # Subclasse que herda da classe Veiculo
     def __init__(self, marca, modelo, portas): # Método construtor da subclasse
-        super().__init__(marca, modelo) # Chama o construtor da classe base
+        super().__init__(marca, modelo) # Chama o construtor da classe pai para inicializar os atributos da classe pai
         self.portas = portas # Atributo específico da subclasse
 
 class Moto(Veiculo): # Subclasse que herda da classe Veiculo
     def __init__(self, marca, modelo, cilindradas): # Método construtor da subclasse
-        super().__init__(marca, modelo) # Chama o construtor da classe base
+        Veiculo.__init__(self, marca, modelo) # Chama o construtor da classe pai para inicializar os atributos da classe pai
         self.cilindradas = cilindradas # Atributo específico da subclasse
     
 carro = Carro("Toyota", "Corolla", 4)
