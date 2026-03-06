@@ -49,6 +49,10 @@ class Veiculo():
         self.potencia = potencia
     def distanciaPercorrida(self):
         return self.peso / self.potencia * 1000
+    def __lt__(self, outro): # Sobrescrevi o método <
+        return self.potencia < outro.potencia
+    def __gt__(self, outro): # Sobrescrevi o método >
+        return self.potencia > outro.potencia
 class Onibus(Veiculo):
     def __init__(self, peso, num_rodas, potencia):
         Veiculo.__init__(self, peso, num_rodas, potencia) # Sobrescrevi o método init usando a classe base Veiculo (precisa adicionar o self também)
@@ -77,3 +81,50 @@ print(f'Distância percorrida ônibus: {onibus.distanciaPercorrida()}')
 print(f'Distância percorrida carro: {carro.distanciaPercorrida()}')
 print(f'Distância percorrida moto: {moto.distanciaPercorrida()}')
 
+'''5 - Baseado no exercício anterior, crie os operador '>' e '<' para dizer qual veículo
+é mais potente. Compare um de cada tipo.
+Observação, sobrescreva os métodos __lt__ e __gt__'''
+print(onibus > carro)
+print(onibus < moto)
+print(moto < carro)
+
+'''6 - Cria uma classe que represente um número negativo, use propriedades
+(@property) para controlar o valor guardado pela classe, sem deixar que ele
+fique positivo (0 pode). Além disso crie alguns operadores para comparação e de subtração. Cuide para que nenhum valor positivo surja.'''
+class Negativo():
+    def __init__(self, numero):
+        self.__numero = numero
+    @property
+    def numero(self):
+        return self.__numero
+    @numero.setter
+    def numero(self, valor):
+        if valor <= 0:
+            self.__numero = valor
+    def __sub__(self, outro):
+        sub = self.__numero - outro
+        if sub > 0:
+            sub = 0
+        return sub
+    def __lt__(self, outro):
+        return self.__numero < outro
+    def __gt__(self, outro):
+        return self.__numero > outro
+negativo = Negativo(-3)
+print(negativo < 3)
+print(negativo > 3)
+negativo.numero = -4
+print(negativo.numero)
+print(negativo.numero - 10)
+
+'''7 - Cria uma função que diga se um objeto é um primitivo do Python, informando
+que é sempre passado valor Ex: [int, float, str, bool], ou se é um objeto passado
+por referência'''
+def eh_primitivo(objeto):
+    if isinstance(objeto, (int, float, str, bool)):
+        return 'É um objeto passado valor'
+    else:
+        return 'É um objeto passado por referência'
+    
+print(eh_primitivo(True))
+print(eh_primitivo(Negativo))
