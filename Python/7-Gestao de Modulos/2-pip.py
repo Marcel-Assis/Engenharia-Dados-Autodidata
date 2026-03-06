@@ -1,0 +1,3 @@
+# Uso básico do pip em Python
+# Explicação: O pip é o gerenciador de pacotes do Python. Ele permite instalar, atualizar e remover pacotes e bibliotecas de terceiros. Para usar o pip, geralmente utilizamos comandos no terminal, como `pip install nome_do_pacote` para instalar um pacote, `pip uninstall nome_do_pacote` para desinstalar e `pip list` para listar os pacotes instalados.
+# Outros comandos úteis incluem `pip show nome_do_pacote` para exibir informações sobre um pacote específico e `pip freeze` para gerar uma lista de pacotes instalados com suas versões.
