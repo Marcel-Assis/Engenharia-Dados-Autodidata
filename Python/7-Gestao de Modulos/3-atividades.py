@@ -10,6 +10,11 @@ else:
 '''2 - Da mesma forma que o exercício anterior, gere a soma de 100 números aleatórios e
 mostre o resultado final.'''
 soma = 0
-for i in randrange(1, 100):
-    soma += i
+for i in range(0, 100):
+    soma += randrange(1, 100)
 print(soma)
+
+'''3 - Crie um modulo que dispõem de duas funções, uma que subtrai dois números e outra
+que soma dois números. Importe essas funções e as use. Não se esqueça de gerar a
+documentação destas funções e do modulo e mostrar na saída de seu programa. Chame o
+modulo de “calc_python”'''
