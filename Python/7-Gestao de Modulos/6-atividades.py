@@ -24,3 +24,17 @@ print(calc_python.subtrai(10, 3))
 print(calc_python.soma.__doc__)
 print(calc_python.soma(10, 3))
 
+'''4 - Cria um modulo para retornar uma lista de números aleatórios. Esse modulo deve
+ter a seguinte funcionalidade:
+- Uma função que retorna uma lista de números randômicos chamada de
+get_random_lista(inicial, final, tam), onde “inicial” é o número mínimo que pode
+aparecer na lista e “final” é o número máximo que pode aparecer. Por fim “tam” deve
+ser o número de elementos na lista. Chame o modulo de “meu_random”'''
+import meu_random
+print(meu_random.get_random_lista(1, 100, 10))
+
+'''5 - Crie um programa que tenha a entrada na função e modulo main(). Ele deve receber
+dois números via parâmetro do programa e mostrar sua soma. Mas com uma condição:
+Verificar se possui dois parâmetros de entrada. Caso contrario parar a execução do
+programa e avisar qual o problema.'''
+# python -u "/home/marcel/Desktop/Projetos/Engenharia-Dados-Autodidata/Python/7-Gestao de Modulos/teste_programa.py" 10 20
