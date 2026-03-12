@@ -1,2 +1,2 @@
 import teste
-dir(teste)
+print(dir(teste))
