@@ -29,3 +29,16 @@ custom_logger('error', 'Esta é uma mensagem de erro personalizada.') # Chama a 
 custom_logger('debug', 'Esta é uma mensagem de depuração personalizada.') # Chama a função custom_logger para registrar uma mensagem de log com o nível DEBUG e a mensagem "Esta é uma mensagem de depuração personalizada."
 custom_logger('warning', 'Esta é uma mensagem de aviso personalizada.') # Chama a função custom_logger para registrar uma mensagem de log com o nível WARNING e a mensagem "Esta é uma mensagem de aviso personalizada."
 custom_logger('critical', 'Esta é uma mensagem crítica personalizada.') # Chama a função custom_logger para registrar uma mensagem de log com o nível CRITICAL e a mensagem "Esta é uma mensagem crítica personalizada."
+
+
+# -------------
+
+custom_logger('info', 'Inicio do programa')
+
+lista = [1, 2, 3]
+
+try:
+    print(lista[5]) # Tenta acessar um índice que não existe na lista, o que causará um erro IndexError
+except:
+    custom_logger('error', 'Erro ao acessar a lista') # Registra uma mensagem de log de erro usando a função custom_logger, incluindo a mensagem de erro do exception
+custom_logger('info', 'Fim do programa')
