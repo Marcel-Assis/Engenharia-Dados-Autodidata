@@ -1,0 +1,4 @@
+2026-03-14 00:22:33,935 - __main__ - INFO - Esta é uma mensagem de log personalizada.
+2026-03-14 00:22:33,936 - __main__ - ERROR - Esta é uma mensagem de erro personalizada.
+2026-03-14 00:22:33,936 - __main__ - WARNING - Esta é uma mensagem de aviso personalizada.
+2026-03-14 00:22:33,937 - __main__ - CRITICAL - Esta é uma mensagem crítica personalizada.
