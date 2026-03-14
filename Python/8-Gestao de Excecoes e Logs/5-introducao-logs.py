@@ -3,7 +3,7 @@
 # O logging é útil para depuração, monitoramento e análise de aplicativos, ajudando a identificar problemas, entender o fluxo do programa e registrar informações importantes durante a execução. Ele é amplamente utilizado em projetos de software para melhorar a manutenção e a resolução de problemas, fornecendo insights valiosos sobre o comportamento do aplicativo.
 import logging
 # Configuração básica do logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s') # Configura o nível de log para DEBUG e define o formato das mensagens de log
 # Exemplo de uso do logging
 logging.debug("Esta é uma mensagem de depuração.")
 logging.info("Esta é uma mensagem informativa.")
