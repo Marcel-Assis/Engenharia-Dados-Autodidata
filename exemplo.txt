@@ -1,0 +1,2 @@
+Olá, este é um exemplo de arquivo criado em Python.
+Podemos escrever várias linhas de texto neste arquivo.
