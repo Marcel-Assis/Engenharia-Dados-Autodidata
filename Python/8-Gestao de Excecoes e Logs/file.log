@@ -1,0 +1,7 @@
+2026-03-20 03:03:21,470 - __main__ - INFO - Esta é uma mensagem de log personalizada.
+2026-03-20 03:03:21,471 - __main__ - ERROR - Esta é uma mensagem de erro personalizada.
+2026-03-20 03:03:21,471 - __main__ - WARNING - Esta é uma mensagem de aviso personalizada.
+2026-03-20 03:03:21,472 - __main__ - CRITICAL - Esta é uma mensagem crítica personalizada.
+2026-03-20 03:03:21,472 - __main__ - INFO - Inicio do programa
+2026-03-20 03:03:21,472 - __main__ - ERROR - Erro ao acessar a lista
+2026-03-20 03:03:21,472 - __main__ - INFO - Fim do programa
