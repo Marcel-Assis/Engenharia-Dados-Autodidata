@@ -1,0 +1,2 @@
+Este é um exemplo de arquivo criado usando a declaração with.
+A declaração with garante que o arquivo seja fechado automaticamente.

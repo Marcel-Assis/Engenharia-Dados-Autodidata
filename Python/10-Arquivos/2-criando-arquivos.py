@@ -22,3 +22,10 @@ lista = [str(i) + "\n" for i in range(1, 11)] # Se você tiver uma lista de núm
 arquivo = open("numeros3.txt", "wt")
 arquivo.writelines(lista)
 arquivo.close()
+
+# Criando um arquivo usando a declaração with
+# Usar a declaração with para criar um arquivo é uma prática recomendada, pois garante que o arquivo seja fechado automaticamente após a execução do bloco, mesmo que ocorra um erro durante a escrita. Aqui está um exemplo de como criar um arquivo usando a declaração with:
+with open("exemplo2_with.txt", "wt") as arquivo: # Abrir o arquivo para escrita usando a declaração with
+    arquivo.write("Este é um exemplo de arquivo criado usando a declaração with.\n") # Escrever uma linha de texto no arquivo
+    arquivo.write("A declaração with garante que o arquivo seja fechado automaticamente.\n") # Escrever outra linha de texto no arquivo
+# Neste exemplo, o arquivo "exemplo2_with.txt" será criado e as duas linhas de texto serão escritas nele. Após a execução do bloco with, o arquivo será fechado automaticamente, mesmo que ocorra um erro durante a escrita. Isso torna o código mais seguro e fácil de ler, além de garantir que os recursos do sistema sejam liberados corretamente.
