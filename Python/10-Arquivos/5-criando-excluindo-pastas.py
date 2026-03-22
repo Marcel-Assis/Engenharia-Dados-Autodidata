@@ -9,3 +9,5 @@ except FileNotFoundError: # Capturar a exceção FileNotFoundError caso a pasta 
 finally:
         os.mkdir("Python/10-Arquivos/nova_pasta") # Usar a função os.mkdir() para criar uma nova pasta chamada "nova_pasta" dentro do diretório "Python/10-Arquivos". Esta função cria um novo diretório no sistema de arquivos com o nome especificado. Certifique-se de que o caminho para a nova pasta seja válido e que você tenha permissões adequadas para criar pastas no local especificado.
         print('Pasta criada com sucesso.') # Imprimir uma mensagem indicando que a pasta foi criada com sucesso
+
+# O código acima tenta deletar a pasta "nova_pasta" usando a função os.rmdir(). Se a pasta não existir, ele captura a exceção FileNotFoundError e imprime uma mensagem indicando que a pasta não existe. Independentemente de a pasta ter sido deletada ou não, o bloco finally é executado, criando a pasta "nova_pasta" novamente usando a função os.mkdir() e imprimindo uma mensagem indicando que a pasta foi criada com sucesso.
