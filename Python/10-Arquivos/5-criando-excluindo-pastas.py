@@ -52,3 +52,7 @@ for i in range(0, 10):
         print('Pasta', nome_pasta, 'excluída com sucesso usando shutil.rmtree().') # Imprimir uma mensagem indicando que a pasta foi excluída com sucesso usando shutil.rmtree()
     except:
         print("Falha ao excluir pasta", nome_pasta)
+
+### Listando os arquivos e pastas presentes no diretório atual
+files = os.listdir() # Usar a função os.listdir() para listar os arquivos e pastas presentes no diretório atual. Esta função retorna uma lista contendo os nomes dos arquivos e pastas presentes no diretório especificado. Se nenhum diretório for especificado, ela listará os arquivos e pastas do diretório atual. Você pode usar esta função para verificar se as pastas foram criadas ou excluídas corretamente.
+print(files) # Imprimir a lista de arquivos e pastas presentes no diretório atual para verificar se as pastas foram criadas ou excluídas corretamente
