@@ -42,3 +42,13 @@ for i in range(0, 10):
         print('Pasta', nome_pasta, 'excluída com sucesso.') # Imprimir uma mensagem indicando que a pasta foi excluída com sucesso
     except:
         print("Falha ao excluir pasta", nome_pasta)
+
+# Excluindo as pastas mesmo com arquivos dentro
+import shutil # Importar o módulo shutil para usar a função shutil.rmtree() para excluir pastas mesmo que elas contenham arquivos
+for i in range(0, 10):
+    nome_pasta = 'pasta' + str(i)
+    try:
+        shutil.rmtree(nome_pasta)
+        print('Pasta', nome_pasta, 'excluída com sucesso usando shutil.rmtree().') # Imprimir uma mensagem indicando que a pasta foi excluída com sucesso usando shutil.rmtree()
+    except:
+        print("Falha ao excluir pasta", nome_pasta)
