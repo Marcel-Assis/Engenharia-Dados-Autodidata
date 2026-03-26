@@ -1,0 +1,19 @@
+{
+    "pessoas": [
+        {
+            "id": 1,
+            "nome": "Jo\u00e3o",
+            "profiss\u00e3o": "Engenheiro"
+        },
+        {
+            "id": 2,
+            "nome": "Maria",
+            "profiss\u00e3o": "M\u00e9dica"
+        },
+        {
+            "id": 3,
+            "nome": "Pedro",
+            "profiss\u00e3o": "Professor"
+        }
+    ]
+}
