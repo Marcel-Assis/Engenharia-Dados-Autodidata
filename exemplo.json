@@ -1,0 +1,18 @@
+{
+    "Rodrigo": {
+        "CPF": "123.456.789-00",
+        "Sexo": "Masculino",
+        "Endereço": "Rua A, 123",
+        "Idade": 30
+    },
+    "Maria": {
+        "CPF": "987.654.321-00",
+        "Sexo": "Feminino",
+        "Endereço": "Rua B, 456",
+        "Idade": 25,
+        "Filhos": [
+            "João",
+            "Ana"
+        ]
+    }
+}
