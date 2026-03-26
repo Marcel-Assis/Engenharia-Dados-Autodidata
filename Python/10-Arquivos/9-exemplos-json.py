@@ -37,3 +37,10 @@ print(texto) # Imprimir a string JSON resultante. O resultado será uma represen
 
 with open('exemplo.json', 'wt', encoding='utf-8') as arquivo:
     arquivo.write(texto)
+###
+
+dicionario = None
+with open('exemplo.json', 'rt', encoding='utf-8') as arquivo:
+    arquivo_lido = arquivo.read() # A função json.read() é usada para ler o conteúdo de um arquivo JSON e convertê-lo em um objeto Python correspondente. Neste caso, o arquivo 'exemplo.json' é aberto em modo de leitura ('rt') com codificação UTF-8, e a função json.read() é chamada para ler o conteúdo do arquivo e armazená-lo na variável dicionario. O resultado será um objeto Python (neste caso, um dicionário) que representa a estrutura dos dados contidos no arquivo JSON.
+    dicionario = json.loads(arquivo_lido) # A função json.loads() é usada para ler o conteúdo de uma string JSON e convertê-la em um objeto Python correspondente. Neste caso, a variável arquivo_lido, que contém o conteúdo do arquivo JSON lido anteriormente, é passada como argumento para a função json.loads(). O resultado será um objeto Python (neste caso, um dicionário) que representa a estrutura dos dados contidos no arquivo JSON.
+print(dicionario) # Imprimir o objeto Python resultante da leitura do arquivo JSON. O resultado será um dicionário Python que representa a estrutura dos dados contidos no arquivo JSON.
