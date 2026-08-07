@@ -16,7 +16,7 @@ class ColecaoNumeros:
         else: # Se não for, vai gerar uma exceção
             raise StopIteration
 
-colecao = ColecaoNumeros(6) # Instancia a classe e define o núemro max de iteração
+colecao = ColecaoNumeros(6) # Instancia a classe e define o número max de iteração
 
 # Utilizando o for
 for item in colecao: # Percorre até o número max (definido ao instanciar)
