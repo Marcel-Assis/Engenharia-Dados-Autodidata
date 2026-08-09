@@ -1,7 +1,8 @@
 # Criando e Excluindo Pastas
 
 import os
-
+# mkdir cria uma pasta
+# rmdir remove uma pasta
 caminho_relativo = 'nova_pasta' # define o nome da pasta
 try: # criei uma lógica que cada vez que roda, cria ou apaga a pasta, dependendo do erro de existência
     os.mkdir(caminho_relativo) # cria e define o nome da pasta
@@ -70,6 +71,7 @@ for i in range(0,10):
     except:
         print("Falha ao excluir a pasta", nome_pasta)
 
+# Listar conteúdo
 files = os.listdir() # lista o conteúdo do diretório aberto
 print(files)
 
