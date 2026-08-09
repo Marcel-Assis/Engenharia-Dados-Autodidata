@@ -12,4 +12,3 @@
 # b abre um arquivo em modo binário
 
 # Padrão é rt (abre pra leitura em modo texto)
-
