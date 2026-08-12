@@ -1,0 +1,8 @@
+database:
+  name: mkt
+  user: admin
+  password: 123456
+cloud:
+  provider: aws
+  key: 486idhsad
+  secret: 938dsjf
