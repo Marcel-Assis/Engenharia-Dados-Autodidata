@@ -4,4 +4,14 @@
         <Sexo>Masculino</Sexo>
         <Endereco>Rua x</Endereco>
     </Pessoa>
+    <Pessoa Nome="Maria">
+        <CPF>654321</CPF>
+        <Sexo>Feminino</Sexo>
+        <Endereco>Rua y</Endereco>
+    </Pessoa>
+    <Pessoa Nome="Ana">
+        <CPF>123654</CPF>
+        <Sexo>Feminino</Sexo>
+        <Endereco>Rua z</Endereco>
+    </Pessoa>
 </DadosPessoais>

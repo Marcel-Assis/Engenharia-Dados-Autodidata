@@ -4,9 +4,10 @@
 import xml.etree.ElementTree as xml
 import os
 
-no_raiz = xml.Element("DadosPessoais") # cria um nó
+no_raiz = xml.Element("DadosPessoais") # cria o nó raiz (principal)
 no_pessoa = xml.Element("Pessoa", attrib={'Nome': 'Rodrigo'}) # define um atributo pro elemento criado
 
+# Criando as sub tags
 no_cpf = xml.SubElement(no_pessoa, 'CPF') # cria uma tag filha de pessoa (subelemento de pessoa)
 no_cpf.text = '123456' # define o valor do subelemento
 
