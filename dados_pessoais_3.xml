@@ -1,0 +1,21 @@
+<DadosPessoais>
+    <Pessoa Nome="Rodrigo">
+        <CPF>12345</CPF>
+        <Sexo>masculino</Sexo>
+        <Endereco>rua x</Endereco>
+    </Pessoa>
+    <Pessoa Nome="Fernanda">
+        <CPF>54321</CPF>
+        <Sexo>feminino</Sexo>
+        <Endereco>rua y</Endereco>
+        <filhos>
+            <Pessoa nome="Rodrigo" />
+            <Pessoa nome="Lucas" />
+        </filhos>
+    </Pessoa>
+    <Pessoa Nome="Ana">
+        <CPF>654321</CPF>
+        <Sexo>feminino</Sexo>
+        <Endereco>rua z</Endereco>
+    </Pessoa>
+</DadosPessoais>
