@@ -1,0 +1,7 @@
+<DadosPessoais>
+    <Pessoa Nome="Rodrigo">
+        <CPF>123456</CPF>
+        <Sexo>Masculino</Sexo>
+        <Endereco>Rua x</Endereco>
+    </Pessoa>
+</DadosPessoais>
