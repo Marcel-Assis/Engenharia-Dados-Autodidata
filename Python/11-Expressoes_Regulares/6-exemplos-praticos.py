@@ -5,7 +5,7 @@ import re
 # validar temperatura
 texto = '-10 Cº'
 
-info = re.search('^(-)?[0-9]+ Cº$', texto) # deve começar (^) com o -, mas - é opcional ter (?), depois espera números de 0 a 9 ([0-9]) e pode ter mais de um numero de 0 a 9 (+), e deve terminar com Cº ($)
+info = re.search('^(-)?[0-9]+ Cº$', texto) # deve começar (^) com o -, mas o - é opcional ter (?), depois espera números de 0 a 9 ([0-9]) e pode ter mais de um numero de 0 a 9 (+), e deve terminar com Cº ($)
 if info != None:
     print('Encontrada ocorrência em', info.span())
     print('O que foi encontrado', info.group())
@@ -17,7 +17,7 @@ else:
 # validar numero de telefone
 # regra: deve começar com 99 e deve ter exatamente 8 dígitos e ser somente números
 texto2 = '99224466'
-info2 = re.search('^99([0-9]{6})', texto2) # deve começar com 99 (^), deve ter numeros de 0-9 e ter exatamente 8 dígitos ({6}) -> nesse caso são 99 do começo + 6
+info2 = re.search('^99([0-9]{6})', texto2) # deve começar com 99 (^), deve ter numeros de 0-9 e ter exatamente 8 dígitos ({6}) -> nesse caso são 2 dígitos do 99 do começo + 6
 if info2 != None:
     print('Encontrada ocorrência em', info2.span())
     print('O que foi encontrado', info2.group())

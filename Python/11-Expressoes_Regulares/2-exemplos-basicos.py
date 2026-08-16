@@ -12,12 +12,12 @@ else:
 
 # encontrar todas as ocorrências
 info2 = re.findall('1', texto) # findall retorna uma lista com todas as ocorrencias
-print(info2)
+print('findall', info2)
 
 # dividir a string e transformar em lista o que não for pedido
 info3 = re.split('1', texto) # o split divide a string antes e depois do encontrado, sem mostrar o que foi pedido
-print(info3)
+print('split', info3)
 
 # substituir um caractere por outro
 info4 = re.sub('1', '#', texto) # sub substitui o 1 por #
-print(info4)
+print('sub', info4)
